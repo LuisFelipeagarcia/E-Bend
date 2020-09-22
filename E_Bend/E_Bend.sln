@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30330.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E_Bend", "E_Bend\E_Bend.csproj", "{A9A163AF-1CE0-4483-90F5-C0BEC8C03D55}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9A163AF-1CE0-4483-90F5-C0BEC8C03D55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9A163AF-1CE0-4483-90F5-C0BEC8C03D55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9A163AF-1CE0-4483-90F5-C0BEC8C03D55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9A163AF-1CE0-4483-90F5-C0BEC8C03D55}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7F35CB4A-2483-46D5-9C7E-6BBD1A63B282}
+	EndGlobalSection
+EndGlobal
