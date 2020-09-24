@@ -38,5 +38,53 @@ namespace E_Bend.Controllers
             return View(equipeModel);
         }
         #endregion
+
+        #region Details
+        // GET: Details
+        public ActionResult Details(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(System.Net.HttpStatusCode.BadRequest);
+            }
+            EquipeModel equipeModel = db.Equipes.Find(id);
+            if (equipeModel == null)
+            {
+                return HttpNotFound();
+            }
+            return View(equipeModel);
+        }
+        #endregion
+
+        #region Edit
+        //GET: Edit
+        public ActionResult Edit(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(System.Net.HttpStatusCode.BadRequest);
+            }
+            EquipeModel equipeModel = db.Equipes.Find(id);
+            if (equipeModel == null)
+            {
+                return HttpNotFound();
+            }
+            return View(equipeModel);
+        }
+
+        //POST: Edit
+        public ActionResult Edit(EquipeModel equipeModel)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Equipes.Add(equipeModel);
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(equipeModel);
+        }
+        #endregion
+
+
     }
 }
