@@ -26,5 +26,7 @@ namespace E_Bend.Models
         [Display(Name ="Email: ")]
         public string Email { get; set; }
         public EquipeModel Equipe { get; set; }
+
+        public int? EquipeId { get; set; }
     }
 }
