@@ -6,13 +6,14 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.UI.WebControls;
 
 namespace E_Bend.Controllers
 {
     public class DobradorController : Controller
         
     {
-        private Contexto db = new Contexto();
+        private readonly Contexto db = new Contexto();
 
         // GET: Dobrador
         public ActionResult Index()
@@ -25,7 +26,9 @@ namespace E_Bend.Controllers
         //GET: Create
         public ActionResult Create()
         {
+            
             ViewBag.EquipeId = new SelectList(db.Equipes, "Id", "Equipe");
+            
             return View();
         }
         //POST: Create

@@ -15,6 +15,7 @@ namespace E_Bend.Context
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
             modelBuilder.Conventions.Remove<PluralizingEntitySetNameConvention>();
         }
     }
