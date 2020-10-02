@@ -42,25 +42,25 @@
                             @{
                                 foreach (var item in Model)
                                 {
-                                                            <tr>
-                                                                <td>
-                                                                    @Html.DisplayFor(modelItem => item.Nome)
-                                                                </td>
-                                                                <td>
-                                                                    @Html.DisplayFor(modelItem => item.Elemento)
-                                                                </td>
-                                                                <td>
-                                                                    @Html.DisplayFor(modelItem => item.Equipe)
-                                                                </td>
-                                                                <td>
-                                                                    @Html.DisplayFor(modelItem => item.Email)
-                                                                </td>
-                                                                <td>
-                                                                    @Html.ActionLink("Editar", "edit", new { id = item.Id }) |
-                                                                    @Html.ActionLink("Detalhes", "details", new { id = item.Id }) |
-                                                                    @Html.ActionLink("Apagar", "delete", new { id = item.Id }) |
-                                                                </td>
-                                                            </tr>
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Nome)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Elemento)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Equipe)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Email)
+                                        </td>
+                                        <td>
+                                            @Html.ActionLink("Editar", "edit", new { id = item.Id }) |
+                                            @Html.ActionLink("Detalhes", "details", new { id = item.Id }) |
+                                            @Html.ActionLink("Apagar", "delete", new { id = item.Id }) |
+                                        </td>
+                                    </tr>
                                 }
                             }
                         </tbody>

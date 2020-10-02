@@ -55,7 +55,7 @@ namespace E_Bend.Controllers
             {
                 return new HttpStatusCodeResult(System.Net.HttpStatusCode.BadRequest);
             }
-            DobradorModel dobradorModel = db.Dobradores.Find(id);
+            DobradorModel dobradorModel = db.Dobradores.Include(e => e.Equipe).First(d => d.Id==id);
             if (dobradorModel == null)
             {
                 return HttpNotFound();
@@ -114,7 +114,7 @@ namespace E_Bend.Controllers
         }
 
         //POST: Delete
-        [HttpPost]
+        [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {

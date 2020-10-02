@@ -2024,6 +2024,9 @@
     <Content Include="Views\Equipe\Index.cshtml" />
     <Content Include="Views\Dobrador\Index.cshtml" />
     <Content Include="Views\Dobrador\Create.cshtml" />
+    <Content Include="Views\Dobrador\Details.cshtml" />
+    <Content Include="Views\Dobrador\Edit.cshtml" />
+    <Content Include="Views\Dobrador\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
