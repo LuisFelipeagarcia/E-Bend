@@ -18,7 +18,7 @@ namespace E_Bend.Controllers
         // GET: Dobrador
         public ActionResult Index()
         {
-            var dobradores = db.Dobradores.Include(a => a.Equipe);
+           var dobradores = db.Dobradores.Include(a => a.Equipe);
             return View(dobradores.ToList());
         }
 

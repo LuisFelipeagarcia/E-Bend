@@ -7,13 +7,13 @@ namespace E_Bend.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class create : IMigrationMetadata
+    public sealed partial class upd : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(create));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(upd));
         
         string IMigrationMetadata.Id
         {
-            get { return "202009301747270_create"; }
+            get { return "202010031753525_upd"; }
         }
         
         string IMigrationMetadata.Source

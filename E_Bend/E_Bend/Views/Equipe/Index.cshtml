@@ -1,4 +1,4 @@
-﻿
+﻿@model IEnumerable<E_Bend.Models.EquipeModel>
 @{
     ViewBag.Title = "Index";
 }
@@ -31,8 +31,8 @@
                         <thead>
                             <tr>
                                 <th scope="col">@Html.DisplayNameFor(model => model.Nome)</th>
-                                <th scope="col">@Html.DisplayNameFor(model => model.Endereco)</th>
-                                <th scope="col">@Html.DisplayNameFor(model => model.Email)</th>
+                                <th scope="col">@Html.DisplayNameFor(model => model.Ativo)</th>
+                                
                                 <th scope="col">Funções</th>
                             </tr>
                         </thead>
@@ -45,11 +45,9 @@
                                             @Html.DisplayFor(modelItem => item.Nome)
                                         </td>
                                         <td>
-                                            @Html.DisplayFor(modelItem => item.Endereco)
+                                            @Html.DisplayFor(modelItem => item.Ativo)
                                         </td>
-                                        <td>
-                                            @Html.DisplayFor(modelItem => item.Email)
-                                        </td>
+                                        
                                         <td>
                                             @Html.ActionLink("Editar", "edit", new { id = item.Id }) |
                                             @Html.ActionLink("Detalhes", "details", new { id = item.Id }) |

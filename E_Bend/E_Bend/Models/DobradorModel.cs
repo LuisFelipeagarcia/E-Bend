@@ -29,9 +29,10 @@ namespace E_Bend.Models
         [EmailAddress(ErrorMessage = "Insira um email válido!")]
         [Display(Name = "Email: ")]
         public string Email { get; set; }
+        public int? EquipeId { get; set; }
         public EquipeModel Equipe { get; set; }
 
-        public int? EquipeId { get; set; }
+        
         
     }
 }

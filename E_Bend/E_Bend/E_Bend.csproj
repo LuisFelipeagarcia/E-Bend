@@ -138,9 +138,9 @@
     <Compile Include="Migrations\202009301730562_pro.designer.cs">
       <DependentUpon>202009301730562_pro.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202009301747270_create.cs" />
-    <Compile Include="Migrations\202009301747270_create.designer.cs">
-      <DependentUpon>202009301747270_create.cs</DependentUpon>
+    <Compile Include="Migrations\202010031753525_upd.cs" />
+    <Compile Include="Migrations\202010031753525_upd.designer.cs">
+      <DependentUpon>202010031753525_upd.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\DobradorModel.cs" />
@@ -2027,6 +2027,7 @@
     <Content Include="Views\Dobrador\Details.cshtml" />
     <Content Include="Views\Dobrador\Edit.cshtml" />
     <Content Include="Views\Dobrador\Delete.cshtml" />
+    <Content Include="Views\Equipe\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -2048,8 +2049,8 @@
     <EmbeddedResource Include="Migrations\202009301730562_pro.resx">
       <DependentUpon>202009301730562_pro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202009301747270_create.resx">
-      <DependentUpon>202009301747270_create.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202010031753525_upd.resx">
+      <DependentUpon>202010031753525_upd.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

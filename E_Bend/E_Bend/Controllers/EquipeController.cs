@@ -11,11 +11,12 @@ namespace E_Bend.Controllers
 {
     public class EquipeController : Controller
     {
-        private readonly Contexto db = new Contexto();
+        private  Contexto db = new Contexto();
 
         // GET: Equipe
         public ActionResult Index()
         {
+            
             return View(db.Equipes.ToList());
         }
 
@@ -24,6 +25,7 @@ namespace E_Bend.Controllers
         //GET: Create
         public ActionResult Create()
         {
+            
             return View();
         }
 

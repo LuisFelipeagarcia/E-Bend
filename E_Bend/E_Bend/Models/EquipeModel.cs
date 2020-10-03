@@ -26,6 +26,9 @@ namespace E_Bend.Models
         public int Ano_Fund { get; set; }
         [Display(Name ="Ativo: ")]
         public bool Ativo { get; set; }
+        
         public ICollection<DobradorModel> Dobrador { get; set; }
+
+        
     }
 }
