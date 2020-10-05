@@ -142,6 +142,22 @@
     <Compile Include="Migrations\202010031753525_upd.designer.cs">
       <DependentUpon>202010031753525_upd.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202010051509445_update.cs" />
+    <Compile Include="Migrations\202010051509445_update.designer.cs">
+      <DependentUpon>202010051509445_update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202010051516473_teste.cs" />
+    <Compile Include="Migrations\202010051516473_teste.designer.cs">
+      <DependentUpon>202010051516473_teste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202010051618193_edit.cs" />
+    <Compile Include="Migrations\202010051618193_edit.designer.cs">
+      <DependentUpon>202010051618193_edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202010051641323_editF.cs" />
+    <Compile Include="Migrations\202010051641323_editF.designer.cs">
+      <DependentUpon>202010051641323_editF.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\DobradorModel.cs" />
     <Compile Include="Models\EquipeModel.cs" />
@@ -2051,6 +2067,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202010031753525_upd.resx">
       <DependentUpon>202010031753525_upd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010051509445_update.resx">
+      <DependentUpon>202010051509445_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010051516473_teste.resx">
+      <DependentUpon>202010051516473_teste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010051618193_edit.resx">
+      <DependentUpon>202010051618193_edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010051641323_editF.resx">
+      <DependentUpon>202010051641323_editF.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

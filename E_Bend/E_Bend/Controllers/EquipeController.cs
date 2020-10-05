@@ -11,7 +11,7 @@ namespace E_Bend.Controllers
 {
     public class EquipeController : Controller
     {
-        private  Contexto db = new Contexto();
+        private readonly Contexto db = new Contexto();
 
         // GET: Equipe
         public ActionResult Index()

@@ -33,7 +33,7 @@
                             <tr>
                                 <th scope="col">@Html.DisplayNameFor(model => model.Nome)</th>
                                 <th scope="col">@Html.DisplayNameFor(model => model.Elemento)</th>
-                                <th scope="col">@Html.DisplayNameFor(model => model.Equipe)</th>
+                                <th scope="col">@Html.DisplayNameFor(model => model.Equipe.Equipe)</th>
                                 <th scope="col">@Html.DisplayNameFor(model => model.Email)</th>
                                 <th scope="col">Funções</th>
                             </tr>
@@ -50,7 +50,7 @@
                                             @Html.DisplayFor(modelItem => item.Elemento)
                                         </td>
                                         <td>
-                                            @Html.DisplayFor(modelItem => item.Equipe)
+                                            @Html.DisplayFor(modelItem => item.Equipe.Equipe)
                                         </td>
                                         <td>
                                             @Html.DisplayFor(modelItem => item.Email)

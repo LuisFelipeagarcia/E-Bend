@@ -7,14 +7,15 @@ using System.Web.Services.Description;
 
 namespace E_Bend.Models
 {
-    public class EquipeModel
+    public class EquipeModel 
     {
         [Key]
         [Display(Name ="ID: ")]
         public int Id { get; set; }
+
         [Required(ErrorMessage ="Insira o nome da equipe: ")]
-        [Display(Name ="Nome: ")]
-        public string Nome { get; set; }
+        [Display(Name ="Nome da Equipe: ")]
+        public string Equipe { get; set; }
         [Display(Name = "Disputas: ")]
         public int Disputas { get; set; }
         [Display(Name = "Vitórias: ")]
@@ -27,7 +28,7 @@ namespace E_Bend.Models
         [Display(Name ="Ativo: ")]
         public bool Ativo { get; set; }
         
-        public ICollection<DobradorModel> Dobrador { get; set; }
+        public ICollection<DobradorModel> Dobradores { get; set; }
 
         
     }

@@ -18,8 +18,8 @@ namespace E_Bend.Controllers
         // GET: Dobrador
         public ActionResult Index()
         {
-           var dobradores = db.Dobradores.Include(a => a.Equipe);
-            return View(dobradores.ToList());
+           var dobradores = db.Dobradores.Include(a => a.Equipe).ToList();
+            return View(dobradores);
         }
 
         #region Create
@@ -28,7 +28,6 @@ namespace E_Bend.Controllers
         {
             
             ViewBag.EquipeId = new SelectList(db.Equipes, "Id", "Equipe");
-            
             return View();
         }
         //POST: Create
@@ -55,7 +54,7 @@ namespace E_Bend.Controllers
             {
                 return new HttpStatusCodeResult(System.Net.HttpStatusCode.BadRequest);
             }
-            DobradorModel dobradorModel = db.Dobradores.Include(e => e.Equipe).First(d => d.Id==id);
+            DobradorModel dobradorModel = db.Dobradores.Find(id);
             if (dobradorModel == null)
             {
                 return HttpNotFound();
