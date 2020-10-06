@@ -2,6 +2,7 @@
 using E_Bend.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Web;
@@ -84,9 +85,9 @@ namespace E_Bend.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Equipes.Add(equipeModel);
+                db.Entry(equipeModel).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction(nameof(Index));
             }
             return View(equipeModel);
         }
@@ -114,7 +115,7 @@ namespace E_Bend.Controllers
             EquipeModel equipeModel = db.Equipes.Find(id);
             db.Equipes.Remove(equipeModel);
             db.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction(nameof(Index));
         }
         #endregion
 

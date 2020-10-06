@@ -1,0 +1,115 @@
+﻿@model E_Bend.Models.EquipeModel
+@{
+    ViewBag.Title = "Edit";
+}
+<br />
+<h2>Editar Equipe</h2>
+<br />
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-8">
+                    @Html.LabelFor(model => model.Equipe, htmlAttributes: new { @class = "control-label " })
+                </div>
+                <div class="col-md-2">
+                    @Html.LabelFor(model => model.Ativo, htmlAttributes: new { @class = "control-label col-md-2" })
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.Equipe, new { htmlAttributes = new { @class = "form-control" } })
+                </div>
+                <div class="col-md-2">
+                    <div class="checkbox">
+                        @Html.EditorFor(model => model.Ativo, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    @Html.ValidationMessageFor(model => model.Equipe, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-md-2">
+                    @Html.ValidationMessageFor(model => model.Ativo, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-2">
+                    @Html.LabelFor(model => model.Disputas, htmlAttributes: new { @class = "control-label col-md-2" })
+                </div>
+                <div class="col-md-2">
+                    @Html.LabelFor(model => model.Vitorias, htmlAttributes: new { @class = "control-label col-md-2" })
+                </div>
+                <div class="col-md-2">
+                    @Html.LabelFor(model => model.Derrotas, htmlAttributes: new { @class = "control-label col-md-2" })
+                </div>
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.Ano_Fund, htmlAttributes: new { @class = "control-label " })
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    @Html.EditorFor(model => model.Disputas, new { htmlAttributes = new { @class = "form-control" } })
+                </div>
+                <div class="col-md-2">
+                    @Html.EditorFor(model => model.Vitorias, new { htmlAttributes = new { @class = "form-control" } })
+                </div>
+                <div class="col-md-2">
+                    @Html.EditorFor(model => model.Derrotas, new { htmlAttributes = new { @class = "form-control" } })
+                </div>
+                <div class="col-md-2">
+                    @Html.TextBoxFor(model => model.Ano_Fund, new { @class = " form-control", @maxLength = 4, @minLength = 4 })
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    @Html.ValidationMessageFor(model => model.Disputas, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-md-2">
+                    @Html.ValidationMessageFor(model => model.Vitorias, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-md-2">
+                    @Html.ValidationMessageFor(model => model.Derrotas, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-md-4">
+                    @Html.ValidationMessageFor(model => model.Ano_Fund, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <br />
+        <br />
+        <div class="row">
+            <div class="col-md-10">
+                <button type="submit" class="btn btn-primary btn-icon-split">
+                    <span class="icon text-white-50">
+                        <i class="far fa-save"></i>
+                    </span>
+                    <span class="text">Editar</span>
+                </button>
+
+                <a class="btn btn-light" href="~/Equipe/Index">Voltar</a>
+            </div>
+        </div>
+    </div>
+}
+
+
+
+
